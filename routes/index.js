@@ -4,7 +4,7 @@ const user = require('../controllers/user');
 
 const middlewares = require('../utils/middlewares');
 
-router.post('/', (req, res) => {
+router.get('/', (req, res) => {
     return res.status(200).json({
         status: true,
         message: "welcome to auth api",
